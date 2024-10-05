@@ -1,0 +1,16 @@
+.ant-spin-dot-item {
+    background-color: var(--black);
+}
+
+.ant-select .ant-select-selector {
+  border: 2px solid var(--black-highlight) !important;
+  background-color: transparent !important;
+}
+
+.ant-select-arrow {
+  color: var(--black) !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected {
+  background-color: var(--highlight-lime) !important;
+}

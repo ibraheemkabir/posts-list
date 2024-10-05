@@ -1,0 +1,43 @@
+.page-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    color: var(--black);
+    background-color: var(--highlight-lime);
+    border-bottom: 2px solid var(--black);
+}
+
+.ant-select-selector {
+    border-width: 2px;
+}
+
+.page-content {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    background-color: var(--white);
+}
+
+.page-header-item {
+    width: 25%;
+    display: flex;
+    gap: 12px;
+}
+
+.left {
+    justify-content: start;
+}
+
+.right {
+    justify-content: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-header {
+        padding: 0 25px;
+    }
+}

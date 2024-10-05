@@ -1,0 +1,25 @@
+.input__search__container {
+    min-width: 100%;
+}
+
+.input__search {
+    border-width: 2px;
+    font-weight: 400;
+    box-shadow: 2px 0px 8px var(--black-shadow);
+    font-size: 16px;
+    padding: 14px 16px;
+}
+
+.input__search__icon {
+    font-size:  18px
+}
+
+.input__search__closeIcon {
+    color: var(--grey);
+    font-size:  20px
+}
+
+.input__search__container {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}

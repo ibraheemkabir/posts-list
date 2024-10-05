@@ -1,0 +1,10 @@
+.avatar-button {
+    background-color: rgb(254, 250, 219);
+    border: 2px solid black;
+    color: black
+}
+
+.avatar-button:hover {
+    background-color:rgb(255, 245, 168);
+    cursor: pointer;
+}
