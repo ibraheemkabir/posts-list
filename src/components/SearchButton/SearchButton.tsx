@@ -19,7 +19,7 @@ export const SearchButton = (props: SearchButtonProps) => {
                 className={styles.input__search}
                 size={'large'}
                 value={value}
-                onChange={(e) => onChange(e.currentTarget.value)}
+                onChange={(evt) => onChange(evt.currentTarget.value)}
                 placeholder="Search posts"
                 prefix={<SearchOutlined className={styles.input__search__icon} />}
                 suffix={value && <CloseCircleFilled className={styles.input__search__closeIcon} onClick={() => onClear()} />}

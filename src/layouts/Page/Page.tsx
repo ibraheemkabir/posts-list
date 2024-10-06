@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Layout } from "antd";
 import { UnorderedListOutlined, UserOutlined } from "@ant-design/icons";
 import { Content, Header } from "antd/lib/layout/layout";
-import { Link } from "react-router-dom";
 
 import AvatarButton from "../../components/AvatarButton/AvatarButton";
 import { UserToggle } from "../../components/UserToggle/UserToggle";
