@@ -23,6 +23,6 @@ We recommend spending about 2 hours on this task. If there is anything you misse
 
 ### Prospective improvements if given more time
 - Add url param to persist selected user id
-- Improve data persistence using redux to habdle scalability.
-- improve search functionality on backend to improve search perfomance.
+- Improve data management using redux to handle scalability taking advantage of the  robust features of redux toolkit to manage states such as loading states and error states.
+- Improve search functionality on backend to improve search perfomance i.e better filter params on endpoint to handle varying filter conditions.
 - Add additional transition animations to improve UX.

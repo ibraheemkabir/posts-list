@@ -28,9 +28,29 @@
     transition: max-height 3s linear;
 }
 
+.post-card:focus {
+    outline: none;
+    border: 3px solid black;
+}
+
 .content.expanded .post-card__expanded {
     animation: fadeIn 500ms;
 }
+
+.post-card .toggle-icon {
+    position: absolute;
+    color: var(--black);
+
+    right: 15px;
+    top: 12px;
+    font-size: 15px;
+}
+
+.post-card .toggle-icon:hover {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
 
 @keyframes fadeIn {
     0% { opacity: 0; }

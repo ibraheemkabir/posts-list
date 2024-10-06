@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Space } from "antd";
 
 import Page from "../../layouts/Page/Page";
@@ -8,7 +9,6 @@ import { UserContext } from "../../contexts/UserContext";
 import { PostCard } from "../../components/PostCards/PostCard";
 import { getPosts } from "../../http/posts";
 import "./PostsPage.css";
-import { useSearchParams } from "react-router-dom";
 
 export interface Post {
     userId: number;
@@ -21,6 +21,7 @@ export default function Posts() {
     const debouncedOnChange = useDebounce(() => handleFilterPosts());
     const [searchParams, setSearchParams] = useSearchParams();
     const { activeUser } = useContext(UserContext)
+
     const [posts, setPosts] = useState<Post[]>([]);
     const [searchParameter, setSearchParameter] = useState<string>(searchParams.get('search') || '');
 
@@ -58,7 +59,7 @@ export default function Posts() {
     const handleClearSearch = () => {
         setSearchParameter("")
         if (searchParams.get('search')){
-            searchParams.delete('search')
+            setSearchParams({search: ""});
         }
         handleFilterPosts()
     }
